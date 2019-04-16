@@ -13,41 +13,13 @@ public class Client {
 
     private static String fullWeather;
 
+    private Client() {
+    }
+
     public static String getFullWeather() {
         return fullWeather;
     }
 
-//    public static WheatherCXF getWheatherAPIByZip(String zip) {
-//        WebClient client = WebClient.create("http://api.openweathermap.org/data/2.5/weather?" +
-//                "APPID=8c284eaf2053d6cc7c76b5052fdc0362&units=metric&zip=" + zip);
-//        Response response = client.accept("application/json").get();
-//        MappingJsonFactory factory = new MappingJsonFactory();
-//        JsonParser parser = null;
-//        WheatherCXF wheatherCXF = null;
-//        try {
-//            parser = factory.createJsonParser((InputStream)response.getEntity());
-//            wheatherCXF = parser.readValueAs(WheatherCXF.class);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return wheatherCXF;
-//    }
-//
-//    public static WheatherCXF getWheatherAPIByCity(String city) {
-//        WebClient client = WebClient.create("http://api.openweathermap.org/data/2.5/weather?" +
-//                "APPID=8c284eaf2053d6cc7c76b5052fdc0362&units=metric&q=" + city);
-//        Response response = client.accept("application/json").get();
-//        MappingJsonFactory factory = new MappingJsonFactory();
-//        JsonParser parser = null;
-//        WheatherCXF wheatherCXF = null;
-//        try {
-//            parser = factory.createJsonParser((InputStream)response.getEntity());
-//            wheatherCXF = parser.readValueAs(WheatherCXF.class);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return wheatherCXF;
-//    }
 
     public static Weather getWeather(String param) {
         WebClient client = WebClient.create("http://api.openweathermap.org/data/2.5/weather?" +
