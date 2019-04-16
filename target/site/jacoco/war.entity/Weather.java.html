@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Weather.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Simple CXF JAX-RS webapp service using spring configuration</a> &gt; <a href="index.source.html" class="el_package">war.entity</a> &gt; <span class="el_source">Weather.java</span></div><h1>Weather.java</h1><pre class="source lang-java linenums">package war.entity;
+
+<span class="fc" id="L3">public class Weather {</span>
+
+    private Integer clouds;
+    private Integer windSpeed;
+    private Integer minTemp;
+    private Integer maxTemp;
+    private Integer pressure;
+    private Integer humidity;
+    private Integer temp;
+    private String description;
+    private String main;
+    private String cityName;
+
+    public Integer getClouds() {
+<span class="fc" id="L17">        return clouds;</span>
+    }
+
+    public void setClouds(Integer clouds) {
+<span class="fc" id="L21">        this.clouds = clouds;</span>
+<span class="fc" id="L22">    }</span>
+
+    public Integer getWindSpeed() {
+<span class="fc" id="L25">        return windSpeed;</span>
+    }
+
+    public void setWindSpeed(Integer windSpeed) {
+<span class="fc" id="L29">        this.windSpeed = windSpeed;</span>
+<span class="fc" id="L30">    }</span>
+
+    public Integer getMinTemp() {
+<span class="fc" id="L33">        return minTemp;</span>
+    }
+
+    public void setMinTemp(Integer minTemp) {
+<span class="fc" id="L37">        this.minTemp = minTemp;</span>
+<span class="fc" id="L38">    }</span>
+
+    public Integer getMaxTemp() {
+<span class="fc" id="L41">        return maxTemp;</span>
+    }
+
+    public void setMaxTemp(Integer maxTemp) {
+<span class="fc" id="L45">        this.maxTemp = maxTemp;</span>
+<span class="fc" id="L46">    }</span>
+
+    public Integer getPressure() {
+<span class="fc" id="L49">        return pressure;</span>
+    }
+
+    public void setPressure(Integer pressure) {
+<span class="fc" id="L53">        this.pressure = pressure;</span>
+<span class="fc" id="L54">    }</span>
+
+    public Integer getHumidity() {
+<span class="fc" id="L57">        return humidity;</span>
+    }
+
+    public void setHumidity(Integer humidity) {
+<span class="fc" id="L61">        this.humidity = humidity;</span>
+<span class="fc" id="L62">    }</span>
+
+    public Integer getTemp() {
+<span class="fc" id="L65">        return temp;</span>
+    }
+
+    public void setTemp(Integer temp) {
+<span class="fc" id="L69">        this.temp = temp;</span>
+<span class="fc" id="L70">    }</span>
+
+    public String getDescription() {
+<span class="fc" id="L73">        return description;</span>
+    }
+
+    public void setDescription(String description) {
+<span class="fc" id="L77">        this.description = description;</span>
+<span class="fc" id="L78">    }</span>
+
+    public String getMain() {
+<span class="fc" id="L81">        return main;</span>
+    }
+
+    public void setMain(String main) {
+<span class="fc" id="L85">        this.main = main;</span>
+<span class="fc" id="L86">    }</span>
+
+    public String getCityName() {
+<span class="fc" id="L89">        return cityName;</span>
+    }
+
+    public void setCityName(String cityName) {
+<span class="fc" id="L93">        this.cityName = cityName;</span>
+<span class="fc" id="L94">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L98">        return &quot;Weather{&quot; +</span>
+                &quot;clouds=&quot; + clouds +
+                &quot;, windSpeed=&quot; + windSpeed +
+                &quot;, minTemp=&quot; + minTemp +
+                &quot;, maxTemp=&quot; + maxTemp +
+                &quot;, pressure=&quot; + pressure +
+                &quot;, humidity=&quot; + humidity +
+                &quot;, temp=&quot; + temp +
+                &quot;, description='&quot; + description + '\'' +
+                &quot;, main='&quot; + main + '\'' +
+                &quot;, cityName='&quot; + cityName + '\'' +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>
